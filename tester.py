@@ -13,13 +13,13 @@
 
 import json
 ## Open the JSON file of pokemon data
-pokedex = open("./pokedex.json", encoding="utf8")
+pokedex = open("./pokedex.json", encoding="utf8")       
 ## create variable "data" that represents the enitre pokedex list
 data = json.load(pokedex)
 
 
 
-for i in range(1,500):
+for i in range(0,900):
     print(data[i]["name"]) 
 
 user = input("Language? ").lower()
@@ -31,3 +31,7 @@ for i in range(1,500):
         print(data[i]["name"]["japanese"])
     else:
         print(data[i]["name"]["chinese"])
+
+user1= input("Type: ")
+
+

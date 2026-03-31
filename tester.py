@@ -33,15 +33,30 @@ for i in range(0,809):
 
 
 
+user1= input("Type: ").lower()
 
+types = ["Fire","Grass","Steel","Fighting","Water","Bug","Dark","Normal","Psychic","Ice","Ground","Rock","Poison","Fairy","Flying"]
 for i in range(0,809):
-    print(data[i]["type"])
+    for i in types:
+        print("ok")
 
 
 
 
 
-#user1= input("Type: ").lower()
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #for i in range():
     #if user1 == "steel":

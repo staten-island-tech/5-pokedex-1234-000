@@ -7,11 +7,15 @@ wards = {
 
 
 staff = {}
-for ward, staff in wards.items():
-    print(ward,staff)
-finder = input("Who? ")
-for characters in staff:
-    if finder == characters:
-        print("works")
+
+for dept, docs in wards.items():
+    print(dept,docs)
+    for doc in docs:
+        if doc not in staff:
+            staff[doc] = [dept]
+        else:
+            staff[doc].append(dept)
+print(staff)
+        
 
 

@@ -35,11 +35,8 @@ for i in range(0,809):
 
 user1= input("Type: ").lower()
 
-types = ["Fire","Grass","Steel","Fighting","Water","Bug","Dark","Normal","Psychic","Ice","Ground","Rock","Poison","Fairy","Flying"]
-for i in range(0,809):
-    for i in types:
-        print("ok")
-
+types = ["Fire","Grass","Steel","Fighting","Water","Bug","Dark","Normal","Psychic","Ice","Ground","Rock","Poison","Fairy","Flying","Ghost","Electric"]
+for i in range(0,809)
 
 
 

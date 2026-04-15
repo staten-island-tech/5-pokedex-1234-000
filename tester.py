@@ -17,54 +17,24 @@ pokedex = open("./pokedex.json", encoding="utf8")
 ## create variable "data" that represents the enitre pokedex list
 data = json.load(pokedex)
 
-for i in range(0,809):
-    print(data[i]["name"])
-
-
-#user = input("Language? ").lower()
+#for i in range(0,809):
+    #print(data[i]["name"]) #name print
+#user = input("Language? English, Japanese, Chinese, or French ").lower() #Ask question
 
 #for i in range(0,809):
-    #if user == "english":
-       # print(data[i]["name"]["french"])
-   # elif user == "japanese":
-    #    print(data[i]["name"]["japanese"])
-    #else:
-    #    print(data[i]["name"]["chinese"])
+    #print(data[i]["name"][user]) #prints what language user wants 
+
+type_ask = input("What Type? ")
+
+new_list = []
+
+for i in range(0,809):
+    if data[i]["type"] == 'type_ask':
+        print("No Work")
 
 
-
-user1= input("Type: ").lower()
-
-types = ["Fire","Grass","Steel","Fighting","Water","Bug","Dark","Normal","Psychic","Ice","Ground","Rock","Poison","Fairy","Flying","Ghost","Electric"]
-for i in range(0,809)
+#types = ["Fire","Grass","Steel","Fighting","Water","Bug","Dark",
+# "Normal","Psychic","Ice","Ground","Rock","Poison","Fairy","Flying","Ghost","Electric"]
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#for i in range():
-    #if user1 == "steel":
-
-   # if user1 == "electric":
-    
-    #if user1 == "fire":
-
-   # if user1== "rock":
-
-    #if user1 == "posion":
-
-   # if user1 == "dragon":
     

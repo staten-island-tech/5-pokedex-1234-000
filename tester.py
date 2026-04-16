@@ -23,14 +23,18 @@ data = json.load(pokedex)
 
 #for i in range(0,809):
     #print(data[i]["name"][user]) #prints what language user wants 
+for i in range(0,809):
+    print(data[i]["type"])
 
 type_ask = input("What Type? ")
 
-new_list = []
-
+data_list = []
 for i in range(0,809):
-    if data[i]["type"] == 'type_ask':
-        print("No Work")
+    data_list.append(data[i])
+for things in data_list:
+    if things["type"] == 'type_ask':
+        print(things["name"])
+        
 
 
 #types = ["Fire","Grass","Steel","Fighting","Water","Bug","Dark",

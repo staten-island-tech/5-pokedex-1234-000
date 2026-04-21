@@ -18,64 +18,45 @@ pokedex = open("./pokedex.json", encoding="utf8")
 data = json.load(pokedex)
 
 moves = open("./moves.json", encoding="utf8")  
-data = json.load(moves)
-
-'''for i in range(0,809):
-    print(data[i]["name"]) #name print
-user = input("Language? English, Japanese, Chinese, or French ").lower() #Ask question
+data_2 = json.load(moves)
 
 for i in range(0,809):
-    print(data[i]["name"][user]) #prints what language user wants 
+    print(data[i]["name"]) 
+user = input("Language? English, Japanese, Chinese, or French ").lower() 
+
 for i in range(0,809):
     print(data[i]["name"][user]) 
 
-type_ask = input("What Type? ")'''
-
-'''for pokemon in data:
+type_ask = input("What Type? ")
+for pokemon in data:
     if type_ask in pokemon["type"]:
         print(pokemon["name"]["english"])
         Found = True
-    else: Found  = False
+    else: Found = False
 if Found == False:
-    print("Nothing") '''
+    print("Nothing") 
 
-'''count = 0
+count = 0
 name_ask = input("Name Match ")
 for char in data:
     if name_ask in char["name"]["english"]:
         print(char["name"]["english"])
         count = 1
 if count == 0:
-    print("None Was Found")'''
+    print("None Was Found")
 
 
 
+asker = input("Pokemon: ")
 
-
-moves = input("Pokemon: ")
 for things in data:
-    if moves in things["name"]["english"]:
-        print(things["type"])
-
-
-    
-
-
-
-
-    
-
-
+    if asker in things["name"]["english"]:
+        for moves in data_2:
+            if moves["type"] in things["type"]:
+                print(moves["ename"])
 
 
 
     
-        
-        
-
-
-#types = ["Fire","Grass","Steel","Fighting","Water","Bug","Dark",
-# "Normal","Psychic","Ice","Ground","Rock","Poison","Fairy","Flying","Ghost","Electric"]
-
 
     

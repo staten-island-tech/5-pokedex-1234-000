@@ -20,7 +20,7 @@ data = json.load(pokedex)
 moves = open("./moves.json", encoding="utf8")  
 data_2 = json.load(moves)
 
-for i in range(0,809):
+'''for i in range(0,809):
     print(data[i]["name"]) 
 user = input("Language? English, Japanese, Chinese, or French ").lower() 
 
@@ -43,7 +43,7 @@ for char in data:
         print(char["name"]["english"])
         count = 1
 if count == 0:
-    print("None Was Found")
+    print("None Was Found")'''
 
 
 
